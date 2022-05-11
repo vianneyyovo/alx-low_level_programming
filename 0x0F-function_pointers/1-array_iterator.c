@@ -1,6 +1,6 @@
 /*
  * File: 1-array_iterator.c
- * Author: Ukonu Divine Chisom
+ * Author: Yovo Koffi Vianney
  */
 
 #include "function_pointers.h"
