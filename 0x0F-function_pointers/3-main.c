@@ -1,6 +1,6 @@
 /*
  * File: 3-main.c
- * Author: Ukonu Divine Chisom
+ * Author: Yovo Koffi Vianney
  */
 #include "3-calc.h"
 
