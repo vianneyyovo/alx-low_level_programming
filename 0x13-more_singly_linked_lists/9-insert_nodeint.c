@@ -1,50 +1,50 @@
 /*
-* Fichier : 9-insert_nodeint.c
-* Auteur : Yov Koffi Vianney
+ * File: 9-insert_nodeint.c
+ * Author: Yovo Koffi Vianney
  */
 
-# inclure  " listes.h "
+#include "lists.h"
 
-/* *
-* insert_nodeint_at_index - Insère un nouveau nœud dans un listint_t
-* liste à une position donnée.
-* @head : Un pointeur vers l'adresse du
-* tête de la liste listint_t.
-* @idx : L'index de la liste listint_t où le nouveau
-* le nœud doit être ajouté - les indices commencent à 0.
-* @n : L'entier que le nouveau nœud doit contenir.
-*
-* Retour : Si la fonction échoue - NULL.
-* Sinon - l'adresse du nouveau nœud.
+/**
+ * insert_nodeint_at_index - Inserts a new node to a listint_t
+ *                           list at a given position.
+ * @head: A pointer to the address of the
+ *        head of the listint_t list.
+ * @idx: The index of the listint_t list where the new
+ *       node should be added - indices start at 0.
+ * @n: The integer for the new node to contain.
+ *
+ * Return: If the function fails - NULL.
+ *         Otherwise - the address of the new node.
  */
-listint_t * insert_nodeint_at_index ( listint_t **head, unsigned  int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *nouveau, *copie = *tête ;
-	 nœud int non signé ;
+	listint_t *new, *copy = *head;
+	unsigned int node;
 
-	new = malloc ( sizeof ( listint_t ));
-	si (nouveau == NULL )
-		retour ( NULL );
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
+		return (NULL);
 
-	nouveau-> n = n ;
+	new->n = n;
 
-	si (idx == 0 )
+	if (idx == 0)
 	{
-		nouveau-> suivant = copier ;
-		*tête = nouveau ;
-		retour (nouveau);
+		new->next = copy;
+		*head = new;
+		return (new);
 	}
 
-	pour (noeud = 0 ; noeud < (idx - 1 ); noeud++)
+	for (node = 0; node < (idx - 1); node++)
 	{
-		si (copie == NULL || copie-> suivant == NULL )
-			retour ( NULL );
+		if (copy == NULL || copy->next == NULL)
+			return (NULL);
 
-		copier = copier-> suivant ;
+		copy = copy->next;
 	}
 
-	nouveau-> suivant = copier-> suivant ;
-	copier-> suivant = nouveau ;
+	new->next = copy->next;
+	copy->next = new;
 
-	retour (nouveau);
+	return (new);
 }
