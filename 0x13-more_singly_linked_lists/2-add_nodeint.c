@@ -1,6 +1,6 @@
 /*
  * File: 2-add_nodeint.c
- * Author: Ukonu Divine Chisom
+ * Author: Yovo Koffi Vianney
  */
 
 #include "lists.h"
