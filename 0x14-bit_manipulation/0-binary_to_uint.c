@@ -1,5 +1,5 @@
 /*
- * Author: Yovo Koffi Vianney
+ * Author: Yovo, Koffi Vianney
  * File: 0-binary_to_uint.c
  */
 
