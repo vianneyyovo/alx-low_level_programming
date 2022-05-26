@@ -1,5 +1,5 @@
 /*
- * Author: Yovo Koffi Vianney
+ * Author: Ukonu Divine Chisom
  * File: 0-binary_to_uint.c
  */
 
