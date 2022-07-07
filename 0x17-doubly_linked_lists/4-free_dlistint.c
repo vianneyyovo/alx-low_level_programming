@@ -1,6 +1,6 @@
 /*
  * File: 4-free_dlistint.c
- * Author: Ukonu Divine Chisom
+ * Author: Yovo Koffi Vianney
  */
 
 #include "lists.h"
